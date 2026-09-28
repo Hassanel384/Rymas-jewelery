@@ -38,8 +38,8 @@ export default function AboutPage() {
             {/* Image */}
             <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl bg-stone-100">
               <Image
-                src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=1000&q=80"
-                alt="Atelier floral Decowin Casablanca"
+                src="/images/categories/packs-cadeaux.jpg"
+                alt="Atelier joaillerie et coffrets cadeaux"
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 className="object-cover"

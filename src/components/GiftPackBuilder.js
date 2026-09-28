@@ -16,7 +16,7 @@ export default function GiftPackBuilder() {
       basePrice: 1350,
       gold: "1.45g Or 18K",
       age: "0-3 ans",
-      image: "https://images.unsplash.com/photo-1611591475155-426c754d434f?w=400&q=80",
+      image: "/images/bracelets-gourmettes/gourmette-bebe-leo-lifestyle.jpg",
     },
     {
       id: "j-boucles",
@@ -24,7 +24,7 @@ export default function GiftPackBuilder() {
       basePrice: 990,
       gold: "0.95g Or 18K",
       age: "0-5 ans",
-      image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?w=400&q=80",
+      image: "/images/boucles-oreilles/boucles-daisy-bebe-lifestyle.jpg",
     },
     {
       id: "j-khmissa",
@@ -32,7 +32,7 @@ export default function GiftPackBuilder() {
       basePrice: 890,
       gold: "1.20g Or 18K",
       age: "0-10 ans",
-      image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80",
+      image: "/images/pendentifs-medailles/pendentif-ange-bapteme-lifestyle.jpg",
     },
     {
       id: "j-cordon",
@@ -40,7 +40,7 @@ export default function GiftPackBuilder() {
       basePrice: 590,
       gold: "0.75g Or 18K",
       age: "0-10 ans",
-      image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80",
+      image: "/images/bracelets-gourmettes/cordon-khmissa-boules-1.webp",
     },
   ];
 
