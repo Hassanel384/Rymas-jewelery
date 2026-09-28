@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { storeConfig } from "@/data/storeConfig";
 import { useCart } from "@/context/CartContext";
@@ -64,14 +65,24 @@ export default function Header({ searchQuery, setSearchQuery, onSelectCategory, 
             </button>
           </div>
 
-          {/* LOGO TALYA KIDS AVEC SLOGAN OR 18K */}
+          {/* LOGO RYMAS JEWELRY AVEC SLOGAN OR 18K */}
           <div className="flex-1 md:flex-initial text-center md:text-left">
-            <Link href="/" className="inline-block group">
-              <div className="flex flex-col items-center md:items-start">
-                <span className="text-2xl md:text-3xl font-serif font-black tracking-tight text-stone-900 group-hover:text-amber-700 transition-colors">
+            <Link href="/" className="inline-flex items-center space-x-2.5 sm:space-x-3 group">
+              <div className="relative w-10 h-10 sm:w-13 sm:h-13 md:w-14 md:h-14 flex-shrink-0">
+                <Image
+                  src="/images/logo-transparent.png"
+                  alt="Rymas Jewelry — Logo Officiel"
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 44px, 56px"
+                  className="object-contain transform group-hover:scale-105 transition-transform"
+                />
+              </div>
+              <div className="flex flex-col text-left">
+                <span className="text-xl sm:text-2xl md:text-2xl font-serif font-black tracking-tight text-stone-900 group-hover:text-amber-700 transition-colors leading-tight">
                   RYMAS <span className="text-amber-600 font-light">JEWELRY</span>
                 </span>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-stone-500 font-bold -mt-1 hidden sm:inline-block">
+                <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-stone-500 font-bold -mt-0.5 hidden xs:inline-block">
                   Or 18K • Bébés &amp; Enfants (0-10 ans)
                 </span>
               </div>
@@ -243,13 +254,24 @@ export default function Header({ searchQuery, setSearchQuery, onSelectCategory, 
           <div className="relative w-4/5 max-w-sm bg-white h-full shadow-2xl z-10 flex flex-col justify-between overflow-y-auto">
             <div>
               <div className="p-4 border-b border-stone-100 flex items-center justify-between bg-stone-50">
-                <div>
-                  <span className="font-serif font-black text-2xl text-stone-900">
-                    RYMAS <span className="text-amber-600">JEWELRY</span>
-                  </span>
-                  <p className="text-[10px] text-amber-700 font-bold">
-                    Or 18K • Bébés &amp; Enfants (0-10 ans)
-                  </p>
+                <div className="flex items-center space-x-2.5">
+                  <div className="relative w-10 h-10 flex-shrink-0">
+                    <Image
+                      src="/images/logo-transparent.png"
+                      alt="Rymas Jewelry Logo"
+                      fill
+                      sizes="40px"
+                      className="object-contain"
+                    />
+                  </div>
+                  <div>
+                    <span className="font-serif font-black text-xl text-stone-900 leading-none block">
+                      RYMAS <span className="text-amber-600">JEWELRY</span>
+                    </span>
+                    <p className="text-[9px] text-amber-700 font-bold uppercase tracking-wider mt-0.5">
+                      Or 18K • Bébés &amp; Enfants
+                    </p>
+                  </div>
                 </div>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}

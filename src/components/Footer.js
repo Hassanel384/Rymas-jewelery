@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { storeConfig } from "@/data/storeConfig";
 import { Phone, Mail, MapPin, Clock, ShieldCheck, Heart, Sparkles } from "lucide-react";
 
@@ -12,13 +13,24 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* 1. PRÉSENTATION DE LA MARQUE */}
           <div className="space-y-4">
-            <div>
-              <span className="text-2xl font-serif font-black text-white tracking-tight">
-                RYMAS <span className="text-amber-500 font-light">JEWELRY</span>
-              </span>
-              <p className="text-[11px] uppercase tracking-[0.2em] text-amber-400 font-bold mt-0.5">
-                {storeConfig.tagline}
-              </p>
+            <div className="flex items-center space-x-3">
+              <div className="relative w-12 h-12 flex-shrink-0 p-1 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                <Image
+                  src="/images/logo-transparent.png"
+                  alt="Rymas Jewelry Logo"
+                  fill
+                  sizes="48px"
+                  className="object-contain"
+                />
+              </div>
+              <div>
+                <span className="text-xl sm:text-2xl font-serif font-black text-white tracking-tight leading-tight block">
+                  RYMAS <span className="text-amber-500 font-light">JEWELRY</span>
+                </span>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-amber-400 font-bold mt-0.5">
+                  {storeConfig.tagline}
+                </p>
+              </div>
             </div>
             <p className="text-stone-400 leading-relaxed text-xs">
               Maison de joaillerie d'exception dédiée aux tout-petits (0 à 10 ans). Nous façonnons des bijoux en or 18 carats poinçonnés et composons des coffrets cadeaux féeriques mariant roses éternelles durables (3 ans), chocolats fins belges et souvenirs inoubliables.

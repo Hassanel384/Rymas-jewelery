@@ -1,6 +1,8 @@
 export const storeConfig = {
   name: "Rymas Jewelry",
   brandName: "Rymas Jewelry — Bijoux Bébés et Enfants",
+  logo: "/images/logo-transparent.png",
+  logoOriginal: "/images/logo.jpg",
   tagline: "L'Or 18K Éternel pour Petits Trésors (0-10 ans)",
   subTagline: "Bijoux en Or 18K Poinçonné & Coffrets Cadeaux Naissance avec Roses Éternelles & Chocolats Fins",
   phone: "(+212) 648-811362",
