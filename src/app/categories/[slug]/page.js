@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useParams, notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -57,14 +58,27 @@ export default function CategoryDetailPage() {
         </nav>
 
         {/* 2. EN-TÊTE DE CATÉGORIE AVEC BANNIÈRE ÉLÉGANTE */}
-        <div className="relative rounded-3xl overflow-hidden bg-stone-900 text-white p-6 sm:p-12 mb-8 shadow-md">
+        <div className="relative rounded-3xl overflow-hidden bg-stone-900 text-white p-6 sm:p-12 mb-8 shadow-md min-h-[190px] flex items-center">
+          {category?.image && (
+            <>
+              <Image
+                src={category.image}
+                alt={category.name}
+                fill
+                priority
+                sizes="100vw"
+                className="object-cover object-center opacity-30"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/80 to-stone-950/30" />
+            </>
+          )}
           <div className="relative z-10 max-w-2xl space-y-2.5">
             <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-brand-primary/80 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider">
               <Sparkles className="w-3 h-3" />
-              <span>Collection Spéciale Decowin</span>
+              <span>Collection Or 18K Garanti</span>
             </span>
             <h1 className="text-2xl sm:text-4xl font-serif font-bold text-white tracking-tight">
-              {category?.name || "Nos Créations Florales & Cadeaux"}
+              {category?.name || "Nos Bijoux Bébé & Enfant"}
             </h1>
             <p className="text-xs sm:text-sm text-stone-200 font-light leading-relaxed">
               {category?.description}
@@ -118,13 +132,13 @@ export default function CategoryDetailPage() {
         {/* 5. TEXTE SEO OPTIMISÉ POUR GOOGLE MAROC */}
         <section className="mt-16 bg-white p-6 sm:p-8 rounded-3xl border border-stone-100 text-xs text-stone-600 space-y-3 leading-relaxed">
           <h2 className="text-sm sm:text-base font-serif font-bold text-stone-900">
-            Pourquoi Choisir Decowin pour vos {category?.name} au Maroc ?
+            Pourquoi Choisir Rymas Jewelry pour vos {category?.name} au Maroc ?
           </h2>
           <p>
-            Chez <strong>Decowin</strong>, nous sélectionnons chaque jour les plus belles roses fraîches, lys et compositions florales de premier choix pour vous garantir une fraîcheur et une tenue irréprochables. Que vous cherchiez un <em>cadeau pour fiancée</em>, un <em>cadeau d'anniversaire</em> somptueux ou un coffret associant <em>fleurs et chocolat belge</em>, nos maîtres fleuristes et chocolatiers conçoivent chaque pièce avec délicatesse.
+            Chez <strong>Rymas Jewelry</strong>, chaque bijou en or 18 carats (750‰) est spécialement conçu pour respecter la peau délicate et la sécurité des bébés et des enfants de 0 à 10 ans. Des fermoirs à vis protecteurs pour les boucles d&apos;oreilles, aux gourmettes d&apos;identité gravées avec amour, en passant par les pendentifs protecteurs Khmissa et anges gardiens, chaque création est une promesse d&apos;éternité.
           </p>
           <p>
-            Nous assurons une <strong>livraison sous 2h à 4h à Casablanca</strong> et sous <strong>24h à Rabat, Marrakech, Tanger, Fès, Meknès et Agadir</strong> avec paiement à la livraison (Cash on Delivery) en toute confiance.
+            Nous assurons une <strong>livraison express sécurisée sous 24h à 48h partout au Maroc</strong> (Casablanca, Rabat, Marrakech, Tanger, Fès, Meknès, Agadir...) avec certificat d&apos;authenticité officiel et paiement à la livraison en toute tranquillité.
           </p>
         </section>
       </main>

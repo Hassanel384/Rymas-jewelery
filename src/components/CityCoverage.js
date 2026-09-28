@@ -51,10 +51,10 @@ export default function CityCoverage() {
             Couverture Nationale
           </span>
           <h2 className="text-xl sm:text-3xl font-serif font-bold text-stone-900 mt-1">
-            Fleuriste &amp; Livraison de Fleurs au Maroc
+            Bijouterie Or 18K &amp; Livraison Sécurisée au Maroc
           </h2>
           <p className="text-xs sm:text-sm text-stone-500 mt-2">
-            Notre atelier artisanal basé à Casablanca livre vos attentions florales et coffrets cadeaux de luxe avec un soin infini dans les plus grandes villes du Royaume.
+            Notre atelier de joaillerie basé à Casablanca expédie vos bijoux en or 18 carats pour bébés et coffrets de naissance avec un soin infini dans les plus grandes villes du Royaume.
           </p>
         </div>
 

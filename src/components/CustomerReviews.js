@@ -8,24 +8,24 @@ export default function CustomerReviews() {
     {
       name: "Salma B.",
       city: "Casablanca (Maârif)",
-      occasion: "Pack Fiançailles & Roses",
-      comment: "Le coffret de fiançailles était absolument somptueux ! Les fleurs sont restées impeccables pendant plus d'une semaine et le tiroir de chocolat belge a fait l'unanimité. Livraison en 3h chrono.",
+      occasion: "Pack Naissance Royal Or 18K",
+      comment: "Le coffret de naissance était tout simplement magique ! La gourmette gravée au prénom de mon fils Rayan est d'une finesse incroyable, et les roses éternelles décorent sa chambre. Livraison en 24h très soignée.",
       rating: 5,
       date: "Il y a 3 jours",
     },
     {
       name: "Yassine E.",
       city: "Rabat (Agdal)",
-      occasion: "Boîte Magique Cœur & Chocolat",
-      comment: "J'ai commandé à distance pour l'anniversaire de ma fiancée à Rabat. Le service client sur WhatsApp est d'une gentillesse rare, ils m'ont envoyé une photo du bouquet avant le départ du livreur. 10/10 !",
+      occasion: "Gourmette Bébé Gravure Offerte",
+      comment: "J'ai commandé pour le Sbou3 de ma nièce. Le poinçon de l'or 18K est bien visible, le certificat officiel était inclus et la gravure laser est ultra nette. Merci à l'équipe WhatsApp pour les conseils !",
       rating: 5,
       date: "Il y a 1 semaine",
     },
     {
       name: "Kenza M.",
       city: "Marrakech (Guéliz)",
-      occasion: "Bouquet 30 Roses Équateur",
-      comment: "Qualité exceptionnelle des roses rouges. Rien à voir avec les fleuristes ordinaires. Emballage de luxe, carte manuscrite très bien rédigée. Je commanderai à nouveau sans hésiter.",
+      occasion: "Boucles d'Oreilles Daisy à Vis",
+      comment: "Premières boucles pour ma petite fille de 8 mois. Le fermoir à vis arrondi est extrêmement sécurisant, elle ne se blesse pas du tout en dormant. Bijou d'une pureté exceptionnelle.",
       rating: 5,
       date: "Il y a 2 semaines",
     },
@@ -39,7 +39,7 @@ export default function CustomerReviews() {
             Témoignages &amp; Confiance
           </span>
           <h2 className="text-xl sm:text-3xl font-serif font-bold text-stone-900 mt-1">
-            Ils ont Célébré avec Deco &amp; Marc
+            Ils ont Choisi Rymas Jewelry
           </h2>
           <div className="flex items-center justify-center space-x-1 mt-2 text-amber-400">
             {[...Array(5)].map((_, i) => (

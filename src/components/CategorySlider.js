@@ -21,10 +21,10 @@ export default function CategorySlider({ selectedCategory, onSelectCategory }) {
         <div className="flex items-center justify-between mb-3">
           <div>
             <h2 className="text-base md:text-xl font-serif font-bold text-stone-900">
-              Découvrez nos Univers Floraux
+              Nos Collections de Bijoux Bébé & Enfant
             </h2>
             <p className="text-xs text-stone-500">
-              Sélectionnez une catégorie pour filtrer instantanément les créations
+              Sélectionnez une catégorie pour filtrer nos bijoux en or 18 carats et packs cadeaux
             </p>
           </div>
 

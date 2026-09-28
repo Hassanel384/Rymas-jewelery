@@ -86,11 +86,11 @@ export default function ProductDetailPage() {
     description: product.description,
     brand: {
       "@type": "Brand",
-      name: "Decowin",
+      name: "Rymas Jewelry",
     },
     offers: {
       "@type": "Offer",
-      url: `https://decowin.ma/produit/${product.slug}`,
+      url: `https://rymas-jewelry.ma/produit/${product.slug}`,
       priceCurrency: "MAD",
       price: product.price,
       availability: "https://schema.org/InStock",
@@ -412,7 +412,7 @@ export default function ProductDetailPage() {
                   : "text-stone-400 hover:text-stone-700"
               }`}
             >
-              Conseils d'Entretien des Fleurs
+              Entretien &amp; Garantie Or 18K
             </button>
           </div>
 
@@ -421,13 +421,10 @@ export default function ProductDetailPage() {
               <div className="space-y-3">
                 <p>{product.description}</p>
                 <p>
-                  Chaque création <strong>Decowin</strong> est façonnée à la main dans notre atelier floral à Casablanca. Nous sélectionnons nos roses et lys auprès de producteurs renommés pour garantir une fraîcheur et une tenue exceptionnelles.
+                  Chaque création <strong>Rymas Jewelry</strong> est confectionnée en or 18 carats véritable certifié (750‰) par des maîtres artisans joailliers au Maroc. Nous apportons un soin minutieux aux finitions douces et sécurisées spécialement adaptées aux bébés et enfants.
                 </p>
-                {product.flowersCount && (
-                  <p><strong>Composition florale :</strong> {product.flowersCount}.</p>
-                )}
-                {product.chocolateWeight && (
-                  <p><strong>Dégustation chocolatée :</strong> {product.chocolateWeight} de pur chocolat belge.</p>
+                {product.goldWeight && (
+                  <p><strong>Poids d&apos;or :</strong> {product.goldWeight}.</p>
                 )}
               </div>
             )}
@@ -435,13 +432,13 @@ export default function ProductDetailPage() {
             {activeTab === "livraison" && (
               <div className="space-y-3">
                 <p>
-                  <strong>Casablanca :</strong> Livraison express en 2h à 4h ou créneau au choix dans tous les quartiers (Ain Sebaa, Anfa, Maârif, Bourgogne, Californie, Sidi Maarouf...).
+                  <strong>Casablanca :</strong> Livraison express sécurisée sous 24h avec remise en main propre et vérification du colis.
                 </p>
                 <p>
-                  <strong>Rabat, Marrakech, Tanger, Fès, Meknès, Agadir :</strong> Expédition sous 24h garantie dans un emballage thermique protecteur pour préserver l'éclat des fleurs et le chocolat.
+                  <strong>Rabat, Marrakech, Tanger, Fès, Meknès, Agadir et toutes les villes du Maroc :</strong> Expédition sous 24h à 48h dans un colis scellé et assuré avec suivi en temps réel par SMS et WhatsApp.
                 </p>
                 <p>
-                  <strong>Paiement :</strong> Vous pouvez payer en espèces à la livraison (Cash on Delivery) en toute confiance lors de la remise en main propre.
+                  <strong>Paiement :</strong> Vous pouvez régler en espèces à la livraison (Cash on Delivery) en toute confiance lors de la remise en main propre de votre écrin.
                 </p>
               </div>
             )}
@@ -449,13 +446,13 @@ export default function ProductDetailPage() {
             {activeTab === "conseils" && (
               <div className="space-y-3">
                 <p>
-                  1. <strong>Pour les boîtes de fleurs :</strong> Ne retirez pas les fleurs de la boîte. Ajoutez un demi-verre d'eau fraîche au centre de la mousse florale tous les 2 jours.
+                  1. <strong>Nettoyage délicat :</strong> Nettoyez le bijou à l&apos;eau tiède savonneuse avec un chiffon doux non abrasif pour conserver toute sa brillance.
                 </p>
                 <p>
-                  2. <strong>Pour les bouquets frais :</strong> Recoupez les tiges en biseau de 1 à 2 cm sous l'eau et placez-les dans un vase propre rempli d'eau tiède.
+                  2. <strong>Fermoirs de sécurité à vis :</strong> Vérifiez périodiquement le serrage du fermoir à vis pour les boucles d&apos;oreilles.
                 </p>
                 <p>
-                  3. <strong>Emplacement :</strong> Évitez l'exposition directe aux rayons du soleil, aux courants d'air et aux sources de chaleur.
+                  3. <strong>Rangement :</strong> Conservez le bijou dans son écrin de protection Rymas d&apos;origine pour éviter tout frottement.
                 </p>
               </div>
             )}
@@ -467,7 +464,7 @@ export default function ProductDetailPage() {
           <div className="mt-12 sm:mt-16">
             <div className="text-center max-w-xl mx-auto mb-8">
               <span className="text-xs font-bold uppercase tracking-widest text-brand-primary">
-                Suggestions Decowin
+                Suggestions Rymas Jewelry
               </span>
               <h2 className="text-xl sm:text-2xl font-serif font-bold text-stone-900 mt-1">
                 Vous Aimerez Aussi
