@@ -99,10 +99,10 @@ export default function CartPage() {
               <CheckCircle2 className="w-12 h-12" />
             </div>
             <h2 className="text-2xl font-serif font-bold text-stone-900">
-              Merci pour votre commande chez Decowin !
+              Merci pour votre commande chez Rymas Jewelry !
             </h2>
             <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-md mx-auto">
-              Votre commande pour <strong>{customerName}</strong> à <strong>{selectedCity.name}</strong> a bien été enregistrée. Notre fleuriste prépare vos fleurs fraîches.
+              Votre commande pour <strong>{customerName}</strong> à <strong>{selectedCity.name}</strong> a bien été enregistrée. Notre atelier joaillier prépare vos bijoux en or 18 carats avec le plus grand soin.
             </p>
             <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
               <button
@@ -133,7 +133,7 @@ export default function CartPage() {
               Votre panier est vide pour le moment
             </h2>
             <p className="text-xs text-stone-500 max-w-sm mx-auto">
-              Laissez-vous tenter par nos coffrets de roses, chocolats belges et arrangements floraux d'exception.
+              Laissez-vous tenter par nos gourmettes gravées, boucles d&apos;oreilles à vis, pendentifs et coffrets de naissance en or 18 carats.
             </p>
             <div className="pt-2">
               <Link
@@ -377,7 +377,7 @@ export default function CartPage() {
                     <span>Commander sur WhatsApp en 1 Clic</span>
                   </button>
                   <p className="text-[11px] text-stone-500 text-center leading-snug">
-                    Un récapitulatif complet de vos articles sera automatiquement généré et envoyé à notre artisan fleuriste sur WhatsApp.
+                    Un récapitulatif complet de vos articles sera automatiquement généré et envoyé à notre conseiller joaillier sur WhatsApp.
                   </p>
                 </div>
               )}
@@ -390,7 +390,7 @@ export default function CartPage() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Truck className="w-3.5 h-3.5 text-brand-primary flex-shrink-0" />
-                  <span>Livraison sécurisée et emballage isotherme</span>
+                  <span>Écrin de luxe &amp; certificat d&apos;authenticité officiel inclus</span>
                 </div>
               </div>
             </div>

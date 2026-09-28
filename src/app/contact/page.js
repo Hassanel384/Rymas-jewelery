@@ -29,7 +29,7 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitted(true);
     // Redirection WhatsApp pré-remplie
-    const text = `Bonjour *Decowin*, nouveau message de contact :\n• Nom : ${name}\n• Téléphone : ${phone}\n• Sujet : ${subject}\n• Message : ${message}`;
+    const text = `Bonjour *Rymas Jewelry*, nouveau message de contact :\n• Nom : ${name}\n• Téléphone : ${phone}\n• Sujet : ${subject}\n• Message : ${message}`;
     const url = `https://wa.me/${storeConfig.whatsappNumber}?text=${encodeURIComponent(text)}`;
     setTimeout(() => {
       window.open(url, "_blank");
@@ -39,19 +39,19 @@ export default function ContactPage() {
   const faqs = [
     {
       q: "Quels sont vos délais de livraison ?",
-      a: "À Casablanca, nous livrons sous 2h à 4h ou selon le créneau de votre choix. Pour Rabat, Marrakech, Tanger, Fès, Meknès et Agadir, la livraison est garantie sous 24h dans un emballage thermique protecteur.",
+      a: "À Casablanca, nous livrons sous 24h avec remise en main propre. Pour Rabat, Marrakech, Tanger, Fès, Meknès et Agadir, la livraison est assurée sous 24h à 48h dans un colis scellé et sécurisé avec suivi.",
     },
     {
       q: "Comment fonctionne le paiement à la livraison ?",
-      a: "Vous réglez en espèces (Cash on Delivery) directement au livreur lors de la réception de vos fleurs et chocolats. Vous pouvez également opter pour un virement bancaire sur simple demande.",
+      a: "Vous réglez en espèces (Cash on Delivery) directement au transporteur lors de la réception de vos bijoux en or 18 carats et coffrets cadeaux.",
     },
     {
-      q: "La carte personnalisée est-elle gratuite ?",
-      a: "Oui, absolument ! Chaque commande Decowin comprend une carte de vœux manuscrite de haute qualité sur laquelle nous calligraphions le mot doux ou de félicitations de votre choix.",
+      q: "La gravure du prénom et la carte sont-elles gratuites ?",
+      a: "Oui, absolument ! La gravure personnalisée du prénom et de la date de naissance est offerte sur toutes nos gourmettes et médailles. Chaque commande comprend également un certificat d'or 18K et une jolie carte manuscrite.",
     },
     {
-      q: "Proposez-vous la décoration florale de voiture de mariage ?",
-      a: "Oui, nos fleuristes se déplacent à votre domicile ou salle des fêtes à Casablanca et environs pour installer la décoration florale complète sur ventouses protectrices (capot, poignées, rubans).",
+      q: "Les bijoux sont-ils adaptés aux nouveau-nés ?",
+      a: "Oui, nos créations sont hypoallergéniques et spécialement dimensionnées pour bébés et enfants (0 à 10 ans), avec des fermoirs sécurisés à vis pour les boucles d'oreilles et des maillons arrondis anti-irritation.",
     },
   ];
 
@@ -65,10 +65,10 @@ export default function ContactPage() {
             Service Client Dédié
           </span>
           <h1 className="text-2xl sm:text-4xl font-serif font-bold text-stone-900 mt-1">
-            Contactez la Maison Decowin
+            Contactez la Maison Rymas Jewelry
           </h1>
           <p className="text-xs sm:text-sm text-stone-500 mt-2">
-            Une question sur un bouquet, une demande pour un mariage ou un événement sur-mesure ? Notre équipe d'artisans est à votre écoute 7 jours sur 7.
+            Une question sur un bijou en or 18 carats, la taille d'une gourmette ou un coffret de naissance sur-mesure ? Notre équipe de conseillers joaillerie est à votre écoute 7 jours sur 7.
           </p>
         </div>
 
@@ -130,7 +130,7 @@ export default function ContactPage() {
               {/* Bouton WhatsApp direct */}
               <div className="pt-2">
                 <a
-                  href={`https://wa.me/${storeConfig.whatsappNumber}?text=Bonjour%20Decowin%2C%20je%20souhaite%20un%20renseignement`}
+                  href={`https://wa.me/${storeConfig.whatsappNumber}?text=Bonjour%20Rymas%20Jewelry%2C%20je%20souhaite%20un%20renseignement`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-3.5 px-4 rounded-2xl bg-[#25D366] hover:bg-[#1ebd56] text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 shadow transition-all"
@@ -158,7 +158,7 @@ export default function ContactPage() {
                   Message Transmis avec Succès !
                 </h3>
                 <p className="text-xs text-stone-600 max-w-sm mx-auto">
-                  Merci {name}, votre demande a bien été envoyée. Vous allez être redirigé vers WhatsApp pour finaliser votre échange avec notre fleuriste.
+                  Merci {name}, votre demande a bien été envoyée. Vous allez être redirigé vers WhatsApp pour finaliser votre échange avec notre conseiller joaillerie.
                 </p>
               </div>
             ) : (
